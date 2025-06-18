@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
                 initCityInfo();
 
+
                 RecyclerView.LayoutManager lm = new LinearLayoutManager(MainActivity.this);
                 _recyclerView1.setLayoutManager(lm);
 
