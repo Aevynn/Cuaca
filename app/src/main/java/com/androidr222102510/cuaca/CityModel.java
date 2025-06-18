@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 public class CityModel {
     private long sunrise, sunset;
     private String name;
-    @SerializedName("cuaca")
+    @SerializedName("coord")
     private CoordModel coordModel;
 
     public CityModel() {

@@ -1,8 +1,8 @@
 package com.androidr222102510.cuaca;
 
 public class CoordModel {
-    private double lat;
-    private double lon;
+   private double lat;
+   private double lon;
 
     public double getLat() {
         return lat;

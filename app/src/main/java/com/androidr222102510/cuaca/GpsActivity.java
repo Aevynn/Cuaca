@@ -16,14 +16,10 @@ public class GpsActivity extends AppCompatActivity {
 
     private WebView webView;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_gps);
-
         webView = findViewById(R.id.wvMain);
 
         TextView textViewCoordinat = findViewById(R.id.textView_koordinat);
@@ -33,7 +29,7 @@ public class GpsActivity extends AppCompatActivity {
 
         String url = "https://www.google.com/maps" +
                 "?q="+ param.getDouble("lat") + "," + param.getDouble("lon") +
-                "&ll" + param.getDouble("lat") + "," + param.getDouble("lon") +
+                "&ll=" + param.getDouble("lat") + "," + param.getDouble("lon") +
                 "&z=10";
 
         WebSettings webSettings = webView.getSettings();
